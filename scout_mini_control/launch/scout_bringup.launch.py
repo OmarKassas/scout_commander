@@ -110,7 +110,7 @@ def generate_launch_description():
                 output='screen',
                 parameters=[
                     os.path.join(scout_mini_control_dir, 'params', 'slam_toolbox_params.yaml'),
-                    {'use_sim_time': use_sim_time, 'database_path': database_path}
+                    {'use_sim_time': use_sim_time, 'database_path': database_path, 'queue_size': 100}
                 ]
             ),
             # IncludeLaunchDescription(
@@ -168,7 +168,7 @@ def generate_launch_description():
                 output='screen',
                 parameters=[
                     os.path.join(scout_mini_control_dir, 'params', 'slam_toolbox_params.yaml'),
-                    {'use_sim_time': use_sim_time, 'database_path': database_path}
+                    {'use_sim_time': use_sim_time, 'database_path': database_path, 'queue_size': 100}
                 ]
             ),
 
